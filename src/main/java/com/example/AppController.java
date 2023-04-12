@@ -15,6 +15,9 @@ public class AppController {
 
     @Get
     public String endpoint() {
-        return myService.hello();
+        myService.timedMethod();
+        myService.countedMethod();
+
+        return "hello";
     }
 }

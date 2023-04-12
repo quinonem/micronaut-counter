@@ -8,8 +8,12 @@ import jakarta.inject.Singleton;
 public class MyService {
 
     @Timed("my_metric_timer")
+    public String timedMethod() {
+        return "hello";
+    }
+
     @Counted("my_metric_counter")
-    public String hello() {
+    public String countedMethod() {
         return "hello";
     }
 }
