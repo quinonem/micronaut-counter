@@ -1,0 +1,9 @@
+micronaut:
+  application:
+    name: testApp
+  metrics:
+    enabled: true
+netty:
+  default:
+    allocator:
+      max-order: 3
